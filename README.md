@@ -11,4 +11,5 @@
 2. 年報附註: 手動蒐集年報附註揭露之有用資訊
 
 ## Power BI 分析
-! [image] 
+1. 營收與獲利能力
+![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/powerBI_image/sales_profit.gif)
