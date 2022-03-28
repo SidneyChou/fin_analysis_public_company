@@ -42,6 +42,7 @@ def financial_statement(co_id, year, quarter, report):
     res.encoding = "utf8"
     df = pd.read_html(res.text)[1]
     df = df.iloc[:, 0:2]
+    df.iloc[:,1] = df.iloc[:,1] * 1000
     year += 1911
     period = str(year)+"Q"+str(quarter)
     df.columns = ["account", period]
@@ -134,4 +135,4 @@ if __name__ == "__main__":
     to_csv(pl, "income_statement")
     to_csv(cf, "cash_flow")
 
-list(bs.columns)
+
