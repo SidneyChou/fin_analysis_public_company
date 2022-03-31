@@ -23,4 +23,6 @@
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/powerBI_image/sales_profit.gif)
 
 2. 現金流量與財務結構
-   * 自2020年起大量的營業活動淨現金流出
+   * 因庫存上升，2020年起大量的營業活動淨現金流出，速動比率也開始降低。
+   * 特別是2021年Q3、Q4庫存較上季增加287億與181億，主要為原料增加。須特別注意長短料問題。
+   * 雖公司獲利持續增加，但因高庫存與資本支出，在未來升息的趨勢下，須注意現金流量。
