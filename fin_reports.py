@@ -65,6 +65,7 @@ def merge_statements(co_id, start_yr, end_yr, report):
             tmp_df = financial_statement(co_id, year, quarter, report)
             df = pd.merge(df, tmp_df, on="account", how="outer")
             df = df.drop_duplicates(subset="account", keep="last")
+            df = df.replace(np.nan, 0.0)
     
     if report == "pl": # Q4 is full-year amount in Income Statement rather than quarter amount
         try:    
@@ -73,6 +74,12 @@ def merge_statements(co_id, start_yr, end_yr, report):
         except KeyError:
             for i in range(end_yr - start_yr):
                 df.iloc[3:, 4*i+4] = df.iloc[3:, 4*i+4] - df.iloc[3:, 4*i+1] - df.iloc[3:, 4*i+2] - df.iloc[3:, 4*i+3]
+
+    elif report == "cf": # is accumulated amount in each quarter
+        for i in range(end_yr - start_yr +1):
+            df.iloc[3:, 4*i+4] = df.iloc[3:, 4*i+4] - df.iloc[3:, 4*i+3]
+            df.iloc[3:, 4*i+3] = df.iloc[3:, 4*i+3] - df.iloc[3:, 4*i+2]
+            df.iloc[3:, 4*i+2] = df.iloc[3:, 4*i+2] - df.iloc[3:, 4*i+1]
 
     return df
 
@@ -104,7 +111,7 @@ def to_mysql(connection, table, df):
     table: MySQL的 table名稱
     df: 報表的變數名稱    
     """
-    df = df.astype(object).replace(np.nan, 0.0)
+    #df = df.astype(object).replace(np.nan, 0.0)
     df['co_id'] = df['co_id'].astype(int)
     df['year'] = df['year'].astype(int)
     df['quarter'] = df['quarter'].astype(int)
