@@ -20,9 +20,11 @@
      - 自2019年起，受美中貿易戰與全球景氣趨緩影響，台灣上市櫃研發支出的金額與增幅創下近五年新高。
      - 但目前營收仍未有大幅成長，故仍需觀察研發費用的效益。
 
-![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/powerBI_image/sales_profit.gif)
+![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/sales_profit.gif)
 
 2. 現金流量與財務結構
    * 因庫存上升，2020年起大量的營業活動淨現金流出，速動比率也開始降低。
    * 特別是2021年Q3、Q4庫存較上季增加287億與181億，主要為原料增加。須特別注意長短料問題。
    * 雖公司獲利持續增加，但因高庫存與資本支出，在未來升息的趨勢下，須注意現金流量。
+
+![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/cf_bs.gif)
