@@ -12,16 +12,22 @@
 2. 2017~2020年的年報附註: 手動蒐集年報附註揭露之有用資訊
 
 ## Power BI dashbord
+1. 營收與獲利
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/sales_profit.gif)
 
+2. 現金流量與財務結構
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/cf_bs.gif)
 
+3. 年報資訊
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/annual_report_info.gif)
 
+4. 同業比較 - 營收與獲利
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/competitor_sales_profit.gif)
 
+5. 同業比較 - 現金流量與財務結構
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/competitor_cf_bs.gif)
 
+6. 同業比較 - CCC days
 ![image](https://github.com/SidneyChou/fin_analysis_public_company/blob/master/img/competitor_ccc_days.gif)
 
 
